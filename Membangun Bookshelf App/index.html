@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📚 Bookshelf App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 data-testid="appTitle">📚 Bookshelf App</h1>
+  </header>
+
+  <section class="book-form">
+    <h2>Tambah Buku Baru</h2>
+    <form id="bookForm" data-testid="bookForm">
+      <input type="text" id="title" data-testid="bookFormTitleInput" placeholder="Judul Buku" required>
+      <input type="text" id="author" data-testid="bookFormAuthorInput" placeholder="Penulis" required>
+      <input type="number" id="year" data-testid="bookFormYearInput" placeholder="Tahun Rilis" required>
+      <label>
+        <input type="checkbox" id="isComplete" data-testid="bookFormIsCompleteCheckbox">
+        Selesai dibaca
+      </label>
+      <button type="submit" data-testid="bookFormSubmitButton">Tambah Buku</button>
+    </form>
+  </section>
+
+  <section class="book-search">
+    <h2>Cari Buku</h2>
+    <form id="searchBookForm" data-testid="searchBookForm">
+      <input type="text" id="searchBookTitle" data-testid="searchBookFormTitleInput" placeholder="Cari berdasarkan judul...">
+      <button type="submit" data-testid="searchBookFormSubmitButton">Cari</button>
+    </form>
+  </section>
+
+  <main>
+    <section id="incompleteBookshelfList" data-testid="incompleteBookList">
+      <h2>📖 Belum Selesai Dibaca</h2>
+    </section>
+
+    <section id="completeBookshelfList" data-testid="completeBookList">
+      <h2>✅ Selesai Dibaca</h2>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bookshelf App | Disusun oleh Aziza Az Zahra</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
