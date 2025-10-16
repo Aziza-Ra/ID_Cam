@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body flex column agar footer tetap di bawah */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f8fa;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #006d77, #83c5be);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #264653;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ffdd00;
+}
+
+/* Main (flex kiri konten + kanan aside) */
+main {
+  flex: 1;
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Konten utama di kiri */
+.content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Article */
+article {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+article h2 {
+  margin-bottom: 15px;
+  color: #006d77;
+}
+
+article img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 15px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Aside Sejarah di kanan */
+aside {
+  flex: 1;
+  background: #eafaf1;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  height: fit-content;
+  align-self: flex-start;
+  position: sticky;
+  top: 20px;
+}
+
+aside h2 {
+  color: #264653;
+  margin-bottom: 10px;
+}
+
+aside img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  background: #264653;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+  font-size: 0.9em;
+}
+
+ 
